@@ -1,0 +1,5 @@
+if SHIELD_NOTTE
+	
+	config ZMK_KEYBOARD_NAME
+		default "Notte"
+endif
