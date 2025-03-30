@@ -1,9 +1,12 @@
 
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "my_keyboard-layouts.dtsi"
 
+
+//transform definition
 / {
-    default_transform: keymap_transform0 {
+    nte_default_transform: keymap_transform0 {
         compatible = "zmk,matrix-transform";
         columns = <14>; // Length of the "col-gpios" array
         rows = <12>; // Length of the "row-gpios" array
@@ -20,49 +23,50 @@
     };
 };
 
-// pin definitions
+// kscan definition
 / {
-    kscan0: kscan0 {
+    nte_kscan: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
         wakeup-source;
 
         col-gpios
-            = <&pillbug 9 GPIO_ACTIVE_HIGH>
-            , <&pillbug 10 GPIO_ACTIVE_HIGH>
-            , <&pillbug 12 GPIO_ACTIVE_HIGH>
-            , <&pillbug 13 GPIO_ACTIVE_HIGH>
-            , <&pillbug 14 GPIO_ACTIVE_HIGH>
-            , <&pillbug 17 GPIO_ACTIVE_HIGH>
-            , <&pillbug 18 GPIO_ACTIVE_HIGH>
-            , <&pillbug 19 GPIO_ACTIVE_HIGH>
+            = <&blackpill 9 GPIO_ACTIVE_HIGH>
+            , <&blackpill 10 GPIO_ACTIVE_HIGH>
+            , <&blackpill 12 GPIO_ACTIVE_HIGH>
+            , <&blackpill 13 GPIO_ACTIVE_HIGH>
+            , <&blackpill 14 GPIO_ACTIVE_HIGH>
+            , <&blackpill 17 GPIO_ACTIVE_HIGH>
+            , <&blackpill 18 GPIO_ACTIVE_HIGH>
+            , <&blackpill 19 GPIO_ACTIVE_HIGH>
             // rotary
-            , <&pillbug 8 GPIO_ACTIVE_HIGH>
-            , <&pillbug 7 GPIO_ACTIVE_HIGH>
-            , <&pillbug 6 GPIO_ACTIVE_HIGH>
-            , <&pillbug 4 GPIO_ACTIVE_HIGH>
-            , <&pillbug 15 GPIO_ACTIVE_HIGH>
-            , <&pillbug 37 GPIO_ACTIVE_HIGH>
-
-
-
+            , <&blackpill 8 GPIO_ACTIVE_HIGH>
+            , <&blackpill 7 GPIO_ACTIVE_HIGH>
+            , <&blackpill 6 GPIO_ACTIVE_HIGH>
+            , <&blackpill 4 GPIO_ACTIVE_HIGH>
+            , <&blackpill 15 GPIO_ACTIVE_HIGH>
+            , <&blackpill 37 GPIO_ACTIVE_HIGH>
             ;
 
         row-gpios
-            = <&pillbug 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pillbug 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pillbug 25 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pillbug 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pillbug 30 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pillbug 23 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pillbug 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pillbug 34 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pillbug 32 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pillbug 35 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pillbug 33 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pillbug 36 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-
-
+            = <&blackpill 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&blackpill 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&blackpill 25 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&blackpill 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&blackpill 30 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&blackpill 23 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&blackpill 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&blackpill 34 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&blackpill 32 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&blackpill 35 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&blackpill 33 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&blackpill 36 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
+    };
+};
+
+/ {
+    chosen {
+        zmk,physical-layout = &nte_physical_layout0;
     };
 };

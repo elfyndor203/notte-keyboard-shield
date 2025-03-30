@@ -1,0 +1,12 @@
+file_format: "1"
+id: notte
+name: Notte
+type: shield
+url: https://github.com/elfyndor203/notte-keyboard.git
+requires:
+  - blackpill
+  - bluetooth
+features:
+  - keys
+  - encoder
+  - studio
