@@ -1,26 +1,41 @@
 
+#include <dt-bindings/zmk/pointing.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-/ {
-    nte.keymap: default_keymap {
-        compatible = "zmk,keymap";
 
+/ {
+    behaviors {
+        volume_encoder: volume_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+
+
+        }
+
+    };
+
+    notte.keymap: default_keymap {
+        compatible = "zmk,keymap";
         default_layer {
             display-name = "Base";
             
             // DOUBLED DELETED, RCTRL, C_MUTE
             bindings = <
-                &kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F12 &tog 1 &kp C_MUTE &kp C_MUTE
+                &kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F12 &tog 1 &kp C_MUTE &kp PRINTSCREEN
                 &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &kp EQUAL &kp BACKSPACE &kp DELETE &kp DELETE
                 &kp TAB &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp BACKSLASH &kp HOME &kp PG_UP
-                &kp CAPS &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMICOLON &kp APOSTROPHE &kp ENTER &kp END &kp PG_DN &kp 
+                &kp CAPS &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMICOLON &kp APOSTROPHE &kp ENTER &kp END &kp PG_DN &kp PG_DN
                 &kp LSHIFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp PERIOD &kp SLASH &kp RSHIFT &kp UP
                 &kp LCTRL &mo 1 &kp LWIN &kp LALT &kp SPACE &kp RALT &kp K_CMENU &kp RCTRL &kp RCTRL &kp LEFT &kp DOWN &kp RIGHT  
+            >;
 
-                >;
+
+            sensor-bindings = <
+                &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_UP C_BRI_DN
+            >;
 
 
-            sensor_bindings = <
             >;
 
         }

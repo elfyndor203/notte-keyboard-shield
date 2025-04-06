@@ -1,11 +1,12 @@
 
+
 #include <physical_layouts.dtsi>
 
 / {
-    nte_physical_layout0: physical_layout_0 {
+    notte_physical_layout: physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "Notte Default";
-        transform = <&nte_default_transform>;
+        transform = <&notte_default_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0    0       0     0     0>
@@ -100,6 +101,7 @@
             ;
         
     };
+    
 };
 
 
