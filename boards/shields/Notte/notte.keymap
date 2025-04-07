@@ -15,7 +15,7 @@
 
     // };
 
-    notte.keymap: default_keymap {
+    notte_keymap: default_keymap {
         compatible = "zmk,keymap";
         default_layer {
             display-name = "Base";
