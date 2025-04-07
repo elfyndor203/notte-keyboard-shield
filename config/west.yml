@@ -3,8 +3,8 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
 
-    # - name: notte_shield_module
-    #   url-base: https://github.com/elfyndor203/notte-keyboard-shield.git
+    - name: notte_shield_module
+      url-base: https://github.com/elfyndor203/notte-keyboard-shield.git
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -13,9 +13,9 @@ manifest:
       revision: main
       import: app/west.yml
 
-    # - name: notte_shield
-    #   remote: notte_shield_module
-    #   revision: main
+    - name: notte_shield
+      remote: notte_shield_module
+      revision: main
 
   self:
     path: config
