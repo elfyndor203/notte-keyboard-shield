@@ -2,6 +2,7 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+      
     - name: notte_shield_module
       url-base: https://github.com/elfyndor203/notte-keyboard-shield.git
     # Additional modules containing boards/shields/custom code can be listed here as well

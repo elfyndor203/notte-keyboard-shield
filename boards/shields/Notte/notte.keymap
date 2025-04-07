@@ -11,7 +11,7 @@
             bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
 
 
-        }
+        };
 
     };
 
@@ -38,6 +38,6 @@
 
             >;
 
-        }
+        };
     };
 };
