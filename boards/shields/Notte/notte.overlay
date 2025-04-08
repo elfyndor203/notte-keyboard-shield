@@ -75,7 +75,7 @@
 
     notte_default_transform: keymap_transform0 {
         compatible = "zmk,matrix-transform";
-        columns = <14>; // Length of the "col-gpios" array
+        columns = <8>; // Length of the "col-gpios" array
         rows = <12>; // Length of the "row-gpios" array
         map = <
 
