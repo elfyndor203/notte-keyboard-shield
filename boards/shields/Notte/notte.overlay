@@ -23,29 +23,29 @@
         wakeup-source;
 
         col-gpios
-            = <&blackpill 9 GPIO_ACTIVE_HIGH>
-            , <&blackpill 10 GPIO_ACTIVE_HIGH>
+            = <&blackpill 16 GPIO_ACTIVE_HIGH>
+            , <&blackpill 15 GPIO_ACTIVE_HIGH> 
+            , <&blackpill 13 GPIO_ACTIVE_HIGH> 
             , <&blackpill 12 GPIO_ACTIVE_HIGH>
-            , <&blackpill 13 GPIO_ACTIVE_HIGH>
-            , <&blackpill 14 GPIO_ACTIVE_HIGH>
-            , <&blackpill 17 GPIO_ACTIVE_HIGH>
-            , <&blackpill 18 GPIO_ACTIVE_HIGH>
-            , <&blackpill 19 GPIO_ACTIVE_HIGH>
+            , <&blackpill 11 GPIO_ACTIVE_HIGH> 
+            , <&blackpill 4 GPIO_ACTIVE_HIGH> 
+            , <&blackpill 3 GPIO_ACTIVE_HIGH> 
+            , <&blackpill 2 GPIO_ACTIVE_HIGH> 
             ;
 
         row-gpios
-            = <&blackpill 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&blackpill 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&blackpill 25 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&blackpill 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&blackpill 30 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&blackpill 23 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&blackpill 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&blackpill 34 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&blackpill 32 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&blackpill 35 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&blackpill 33 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&blackpill 36 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&blackpill 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
+            , <&blackpill 25 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
+            , <&blackpill 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&blackpill 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
+            , <&blackpill 38 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
+            , <&blackpill 27 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
+            , <&blackpill 39 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
+            , <&blackpill 42 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
+            , <&blackpill 40 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
+            , <&blackpill 43 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
+            , <&blackpill 41 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
+            , <&blackpill 45 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
             ;
     };
 
