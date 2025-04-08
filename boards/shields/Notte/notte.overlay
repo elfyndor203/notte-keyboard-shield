@@ -1,7 +1,7 @@
 
 
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "my_keyboard-layouts.dtsi"
+#include "notte-layouts.dtsi"
 
 
 // kscan definition
