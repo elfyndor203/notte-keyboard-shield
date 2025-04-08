@@ -11,11 +11,11 @@
         zmk,physical-layout = &notte_physical_layout;
     };
 
-    sensors: sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&left_encoder &right_encoder &lower_encoder>;
-        triggers-per-rotation = <20>;
-    };
+    // sensors: sensors {
+    //     compatible = "zmk,keymap-sensors";
+    //     sensors = <&left_encoder &right_encoder &lower_encoder>;
+    //     triggers-per-rotation = <20>;
+    // };
 
     notte_kscan: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
