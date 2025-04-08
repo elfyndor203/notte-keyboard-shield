@@ -92,17 +92,17 @@
 
 };
 
-&left_encoder {
-status = "okay";
-};
+// &left_encoder {
+// status = "okay";
+// };
 
-&right_encoder {
-status = "okay";
-};
+// &right_encoder {
+// status = "okay";
+// };
 
-&lower_encoder {    
-status = "okay";
-};
+// &lower_encoder {    
+// status = "okay";
+// };
 
 
 
